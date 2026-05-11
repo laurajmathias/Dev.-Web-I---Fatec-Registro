@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Classes no CSS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Demonstração de Pseudo-Classes</h1>
+    <br>
+
+    <h2>Hover - é ativada quando o mouse passa pelo elemento</h2>
+    <br>
+    <div class="caixa"> 
+        passe o mouse aqui 
+    </div>
+    <div class=".caixa:houver"></div>
+<!-- Para fazer a caixa aumentar quando o mouse passar sobre ela usamos houver. Que é feito pelo código: -->
+<!-- .caixa:houver{ 
+    background-color: rgb(37, 109, 109);
+    color: white;
+    transform: scale(0.9);
+    box-shadow: 0 8px 16px rgba(140,201,228,0.5);
+} -->
+
+
+<button class="btn-download">Download</button>
+<!-- O meu css não ta funcionando -->
+<br>
+<h3>:Focus - é ativada quando o elemento recebe foco, como um campo de formulário ou um link</h3>
+<br>> 
+<form> 
+    <input type="text" aria-placeholder="clique aqui para focar">
+    <input type="password" aria-placeholder="clique aqui para focar">
+</form>
+
+
+</body>
+</html>

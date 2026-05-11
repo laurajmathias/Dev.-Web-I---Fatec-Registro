@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de cadastro</title>
+</head>
+<body>
+    <h1>Cadastro Aluno DSM</h1>
+    <p>Este é um formulário de cadastro para os alunos do curso de Desenvolvimento de Software Multiplataforma da Fatec-Registro</p>
+    <form action="#" method="POST">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <label for="Nome">Nome completo:</label> <br>
+            <input type="text" id="Nome"name="Nome" required placeholder="Digite o seu nome completo"> <br>
+            <label for="Email">Email:</label> <br>
+            <input type="text" id="Email" name="Email" required placeholder="Digite se email"> <br>
+            <label for="Data de Nascimento">Data de Nascimento:</label><br>
+            <input type="date" id="Data de nasicmento" name="data de nasicmento" required placeholder="Insira sua data de nascimento"><br>
+        
+        </fieldset>
+        <fieldset>
+            <legend>Dados Acadêmicos</legend>
+            <label for="Curso">Curso:</label> <br>
+            <input type="radio" name="Curso" id="DSM" value="DSM"> Desenvolvimento de Software Multiplataforma <br>
+            <input type="radio" name="Curso" id="ADS" value="ADS"> Análise e Desenvolvimento de Sistemas <br>
+            <input type="radio" name="Curso" id="GE" value="GE"> Gestão de Empresarial <br>
+
+        </fieldset>
+        <fieldset>
+            <legend>Período</legend>
+            
+            <select name="Período" id="Período" required>
+                <option value="">Selecione o período</option>
+                <option value="Matutino">Matutino</option>
+                <option value="Noturno">Noturno</option>
+                <br><br>
+             
+              </select>
+        </fieldset>
+        <legend>Observações</legend>
+        <textarea name="Observações" id="Observações" cols="30" rows="10" placeholder="Digite suas observações aqui..."></textarea>
+        <br><br>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+         <input type="checkbox" name="envio" id="envio" value="enviar" required>
+        <label for="envio"> Concordo em enviar meus dados para a Fatec-Registro</label>
+    </form>
+        </fieldset>
+
+        <br><br> 
+        
+       
+      
+
+
+</body>
+</html>

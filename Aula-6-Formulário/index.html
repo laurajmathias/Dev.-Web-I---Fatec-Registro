@@ -1,0 +1,115 @@
+<!-- Os seus atributos principais: action e method, onde action define a URL para a qual os dados do formulário serão enviados e method define o método de envio (GET ou POST) Isso estruturado fica da seguinte forma: <form action="URL" method="GET|POST"> -->
+    <!-- A tag input é usada para criar campos de entrada de dados no formulário. Exemplos de textos comuns de input são: (type="text", type="email", type="password", type="radio", type="checkbox") -->
+     <!-- <input type="text"
+     <input type= "email">
+     <input type="password">
+        <input type="radio
+        <input type="checkbox"> -->
+        <!-- Outros exemplos de atributos da tag input, além do type são: name, value, placeholder, required, id, etc.
+         id - Identificador único do campo
+         name - Nome do dado enviado
+         required - Indica que o campo é obrigatório 
+         placeholder - Texto de ajuda exibido dentro do campo 
+         disabled - Indica que o campo está desabilitado -->
+
+        <!-- Exemplo: <input type="email" name="email" placeholder="Exemplo@email.com"> -->
+         <!-- a tag <label> associa um texto descritivo ao campo de entrada -->
+         <!-- <label for="email">Email:</label> <input type="email" id="email"> -->
+          <!-- radio bottoms - para funcionarem corretamente, necessita de alguns atributos padrões. Esses são: name, value, id, etc. Name: Identificador do botão de opção Value: valor que será enviado para o backend e possivelmente armazenado em um banco de dados.Texto: ão é um atributo, mas é necessário para rotular a opção; escrito fora da tag.  -->
+           <!-- Button: tag que serve para criar botões no formulário -->
+
+
+
+<!DOCTYPE html>
+<html lang="pt-br
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastro</title>
+</head>
+<body>
+    <header>
+        <h1>Formulário de Cadastro</h1>
+    </header>
+    <main>
+        <section>
+            <!-- Formulário de cadastro -->
+             <form action=""method="POST">
+                <fieldset>
+                    <legend>Informações Pessoais</legend>
+                    <label for="Nome completo"></label>Nome:</label> 
+                    <br>
+                    <input type="text" id="Nome completo" name="Nome completo" required placeholder="Insira o seu nome"> 
+                    <br>
+                    <label for="Email"></label>Email:<br>
+                    <input type="email" id="Email" name="Email" required placeholder="Insira o seu email">
+                     <br>
+                     <label for="password">Senha:</label>
+                     <br>
+                     <input type="password" id="password" name="password" placeholder="Insira sua senha"required> 
+                     <br>
+                     <label for="Nascimento">Nascimento:</label>
+                     <br>
+                     <input type="date" id="Nascimento" name="Nascimento" placeholder="Digite a sua data de nascimento:">
+                     <br>
+                     <label for="Sexo">Sexo:</label>
+                     <br>
+                     <input type="radio" name="sexo" id="masc"
+                     value="masc"> Masculino
+                     <br>
+                    
+                     <input type="radio" name="sexo" id="fem 
+                     value="Fem"> Feminino
+                     
+                     <br>
+
+                     
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>
+                            Dados do Produto
+                        </legend>
+                        <label for="quantidade"></label>
+                        <br>
+                        <input type="number" id="quantidade" name="quantidade" placeholder="Digite a quantidade do produto">
+                        <br> <br>
+                        <label for="cor">Cor:</label> <br>
+                        <input type="color" id="cor" name="cor">
+                        <br>
+                        <label for="entrega">Agendar data da entrega:</label>
+                        <br>
+                        <input type=datetime-local">
+                        <br>
+                        <label for="frete">Selecine o frete:</label>
+                        <br>
+                        <select name="frete" id="frete">
+                            <option value="pac">PAC</option>
+                            <option value="sedex">Sedex</option>
+                            <option value="sedex 10">Sedex 10</option>
+                        </select> <br><br>
+                        <label for="obsrevações">Observações:</label>
+                        <textarea rows="4" cols="40" name="Observações"
+                        id="observações" placeholder=""escreva aqui observações sobnre o produto">
+                        </textarea>
+                        <br><br>
+
+                        <input type="checkbox" name="termos" id="termos">
+                        Li e aceito os termos de uso da plataforma.
+                        <br><br>
+                        
+
+                        <button type="button">Ler os termos de uso</button>
+                        <br><br><br><br>
+                        <button type="submit">Enviar</button> 
+                        <button type="reset">Limpar</button>
+                    </fieldset>
+
+
+
+             </form>
+
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,45 @@
+/* Seletor de elementos -  seleciona os elementos HTML diretamente, ou seja, a tag. O estilo será aplicado a todas as tags do tipo selecionado. Exemplo: p {color: red;} irá selecionar todas as tags <p> e aplicar a cor vermelha ao texto contido nelas. */
+/* Selecionar o elemento/* 
+/*p-> seletor */
+/*font-size -> propriedade */
+/* 16px -> valor */
+/* Seletor de classe - seleciona os elementos HTML que possuem um atributo class específico. O estilo será aplicado a todos os elementos que possuem a classe selecionada. Exemplo: .minha-classe {color: blue;} irá selecionar todos os elementos que possuem a classe "minha-classe" e aplicar a cor azul ao texto contido neles. */
+body {
+    background-color:   rgb(0, 0, 0);
+    color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+    /* Espaço interno do elemento - padding */
+    padding: 20px;
+}
+
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: rgb(133, 133, 200);
+}
+
+section p {
+    color: rgb(200, 133, 133);
+}   
+.destaque { 
+    background-color: bisque;
+    color:black
+}
+.destaque {
+    font-weight: bold;
+    padding: 10px;
+    border-left: 5px solid rgb(254, 160, 160);
+    border-radius: 3px;
+}
+/* Seletor de ID - seleciona o elemento HTML que possui um atributo id específico. O estilo será aplicado apenas ao elemento que possuir o ID selecionado. Exemplo: #meu-id {color: green;} irá selecionar o elemento que possui o ID "meu-id" e aplicar a cor verde ao texto contido nele. */
+#unico { 
+    background-color: rgb(122, 122, 122);
+    color: black;
+    padding: 10px;
+    border-radius: 3px;
+    height: 100px;
+     text-align: center;
+  
+}
