@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula-5-Tabelas</title>
+</head>
+<body>
+    <header>
+      <h1>Tabelas HTML 5</h1>
+    </header>
+    <main>
+<!-- A estrutura databela, a tag para criar uma linha será tr
+e a tag para criar uma célula será td, e a tag para criar um título de coluna será th
+  -->
+<h2>Estrutura Miníma da Tabela</h2>
+<table border="1"> 
+    <!-- Linha 1, já que a cada tr, cria-se uma nova linha na tabela -->
+    <tr>
+        <td>Dado 1</td>
+        <td>Dado 2</td>
+        <td>Dado 3</td>
+        <td>Dado 4</td>
+        
+    </tr>
+    <tr>
+        <td>Dado 5</td>
+        <td>Dado 6</td>
+        <td>Dado 7</td>
+        <td>Dado 8</td>
+    </tr>
+</table>
+
+
+
+<h3>Tabela com Cabeçalho</h3>
+<table border="1"> 
+    <th>Produtos</th>
+    <th>Preço</th>
+
+    <!-- Para duplicar uma linha, seleciona  a linha e pressiona shift alt e seta para baixo -->
+      
+</tr>
+
+
+<h3>Tabela c/títulos</h3>
+<table border="1">
+    <caption>Tabela de Preços</caption>
+    <tr>
+        <th>Serviços</th>
+        <th>Valor</th>
+        <td>pintura residencial </td>
+        <td>2500,00</td>
+    </tr>
+
+<!-- Tabela com estrutura semântica -->
+<h1>Tabela com esturutura semântica</h1>
+<table>border="1">
+    <caption>Tabela de Preços</caption>
+    <thead>
+        <tr>
+            <th>Serviços</th>
+            <th>Valor</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>pintura residencial </td>
+            <td>2500,00</td>
+        </tr>
+    </tbody>
+
+</table>
+<table border="1">
+<caption>Tabela de Preços</caption>
+<tbody>
+    <tr>
+<td>Preços </td>
+<td>Valores</td>
+<td>Total</td>
+    </tr>
+
+<table>
+  <caption>Tabela semântica</caption>
+  <thead>
+    <tr>
+      <th>Produto</th>
+      <th>Quantidade</th>
+      <th>Preço</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Serviço de Pintura</td>
+        <td>10</td>
+      <td>R$ 1550,00</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td colspan="2">Total</td>
+      <td>R$ 500,00</td>
+    </tr>
+  </tfoot>
+</table>
+
+
+
+
+</tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </main>
+   
+</body>
+</html>
